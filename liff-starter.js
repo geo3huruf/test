@@ -10,39 +10,7 @@ function getP(){
         document.getElementById('textx').addEventListener('click', function () {
             liff.sendMessages([{
                 type: 'text',
-                text: atob('bGluZTovL2FwcC8xNjAyNjg3MzA4LURnZWRHazlBP3R5cGU9dGV4dCZ0ZXh0PVlvdXIlMjBUZXh0Cgp0eXBlID0+IHRleHQKdGV4dCA9PiB5b3VyIHRleHQ=')
-            }]).then(function () {
-                liff.closeWindow();
-            });
-        });
-        document.getElementById('imagex').addEventListener('click', function () {
-            liff.sendMessages([{
-                type: 'text',
-                text: atob('bGluZTovL2FwcC8xNjAyNjg3MzA4LURnZWRHazlBP3R5cGU9aW1hZ2UmaW1nPWh0dHBzOi8vd2FsbHBhcGVyc3R1ZGlvMTAuY29tL3N0YXRpYy93cGRiL3dhbGxwYXBlcnMvMTAwMHg1NjMvMTY4ODkxLmpwZwoKdHlwZSA9PiBpbWFnZQppbWcgPT4gTGluayAobXVzdCBiZSBIVFRQUyk=')
-            }]).then(function () {
-                liff.closeWindow();
-            });
-        });
-        document.getElementById('videox').addEventListener('click', function () {
-            liff.sendMessages([{
-                type: 'text',
-                text: atob('bGluZTovL2FwcC8xNjAyNjg3MzA4LURnZWRHazlBP3R5cGU9dmlkZW8mb2N1PWh0dHBzOi8vdGlueXVybC5jb20veThvZzNvcjUmcGl1PWh0dHBzOi8vaW1hZ2VzNi5hbHBoYWNvZGVycy5jb20vNzEwL3RodW1iLTM1MC03MTAxMzIucG5nCgp0eXBlID0+IHZpZGVvCm9jdSA9PiB2aWRlbyB1cmwKcGl1ID0+IHByZXZpZXcgaW1hZ2U=')
-            }]).then(function () {
-                liff.closeWindow();
-            });
-        });
-        document.getElementById('audiox').addEventListener('click', function () {
-            liff.sendMessages([{
-                type: 'text',
-                text: atob('bGluZTovL2FwcC8xNjAyNjg3MzA4LURnZWRHazlBP3R5cGU9YXVkaW8mbGluaz1odHRwczovL3BsYXRlbGV0cy5mdW4vcHVibGljL3NvdW5kcy9tdXNpYy5tcDM=')
-            }]).then(function () {
-                liff.closeWindow();
-            });
-        });
-        document.getElementById('stickerx').addEventListener('click', function () {
-            liff.sendMessages([{
-                type: 'text',
-                text: atob('V2l0aCBBbmltYXRpb246CmxpbmU6Ly9hcHAvMTYwMjY4NzMwOC1EZ2VkR2s5QT90eXBlPXN0aWNrZXImc3RrPWFuaW0mc2lkPTMyMTI4MjMxJnBrZz0zMDk5MzEyCgpObyBBbmltYXRpb246CmxpbmU6Ly9hcHAvMTYwMjY4NzMwOC1EZ2VkR2s5QT90eXBlPXN0aWNrZXImc3RrPW5vYW5pbSZzaWQ9MzIxMjgyMzEmcGtnPTMwOTkzMTIKCnR5cGUgPT4gc3RpY2tlcgpzdGsgPT4gYW5pbSAvIG5vYW5pbQpzaWQgPT4gc3RpY2tlciBpZApwa2cgPT4gcGFja2FnZXMgaWQ=')
+                text: atob('VXNhZ2UgZm9yIGxpZmYgWyBsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/IF0KClVzYWdlIGltYWdlIFdpdGggZm9vdGVyOgo9PT4gdHlwZT1mb2ltYWdlCj09PiBpbWc9VVJMIGxpbmsKbGluZTovL2FwcC8xNjAzMTAzNTE0LXIwRTQ0cDM1P3R5cGU9Zm9pbWFnZSZpbWc9aHR0cHM6Ly90aW55dXJsLmNvbS95eG9sbDRibgoKVXNhZ2UgaW1hZ2Ugbm9uIGZvb3RlcjoKPT0+ICB0eXBlPWltYWdlCj09PiAgIGltZz1VUkwgbGluawpsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/dHlwZT1pbWFnZSZpbWc9aHR0cHM6Ly90aW55dXJsLmNvbS95eG9sbDRibgoKVXNhZ2UgdmlkZW9zOgo9PT4gIHR5cGU9dmlkZW8KPT0+ICAgb2N1PVVSTCBzaG9ydGVyCj09PiAgIHBpdT1VUkwgc2hvcnRlcgpsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/dHlwZT12aWRlbyZvY3U9aHR0cHM6Ly90aW55dXJsLmNvbS95eGhnZmwzeCZwaXU9aHR0cHM6Ly90aW55dXJsLmNvbS95eG9sbDRibgoKVXNhZ2UgdGV4dCBOb24gZm9vdGVyOgo9PT4gdHlwZT10ZXh0Cj09PiB0ZXh0PUdlbwpsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/dHlwZT10ZXh0JnRleHQ9R2VvJTIwRW1hbmclMjBLZXJlbgoKVXNhZ2UgdGV4dCBXaXRoIEZsZXg6Cj09PiB0eXBlPWZ0ZXh0Cj09PiB0ZXh0PUdlbwpsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/dHlwZT1mdGV4dCZ0ZXh0PUdlbyUyMEVtYW5nJTIwS2VyZW4KClVzYWdlIHRleHQgTm9uIGZvb3RlcjoKPT0+IHR5cGU9dGV4dAo9PT4gdGV4dD1HZW8KbGluZTovL2FwcC8xNjAzMTAzNTE0LXIwRTQ0cDM1P3R5cGU9dGV4dCZ0ZXh0PUdlbyUyMEVtYW5nJTIwS2VyZW4KClVzYWdlIFN0aWNrZXJzIFdpdGggQW5pbWF0aW9uOgo9PT4gdHlwZT1zdGlja2VyCj09PiBzdGs9YW5pbQo9PT4gc2lkPUlkIHN0aWNrZXJzCj09PiBwa2c9VmVyc2kgdHlwZQpsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/dHlwZT1zdGlja2VyJnN0az1hbmltJnNpZD02NTg3MTQyMyZwa2c9MQoKVXNhZ2UgU3RpY2tlcnMgTm9uIEFuaW1hdGlvbjoKPT0+IHR5cGU9c3RpY2tlcgo9PT4gc3RrPW5vYW5pbQo9PT4gc2lkPUlkIHN0aWNrZXJzCj09PiBwa2c9VmVyc2kgdHlwZQpsaW5lOi8vYXBwLzE2MDMxMDM1MTQtcjBFNDRwMzU/dHlwZT1zdGlja2VyJnN0az1ub2FuaW0mc2lkPTY1ODcxNDIzJnBrZz0xCgpVc2FnZSBBdWRpbzoKPT0+IHR5cGU9YXVkaW8KPT0+IGxpbms9VVJMIHNob3J0ZXIKbGluZTovL2FwcC8xNjAzMTAzNTE0LXIwRTQ0cDM1P3R5cGU9YXVkaW8mbGluaz1odHRwczovL3Rpbnl1cmwuY29tL3k0ZnJzd2Fr')
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -173,7 +141,7 @@ function textFooter(){
                 sentBy: {
                     label: prof.displayName,
                     iconUrl: prof.pictureUrl,
-                    linkUrl: "line://app/1602687308-DgedGk9A?type=fotext&text="+encodeURI(teks)}
+                    linkUrl: "line://app/1603103514-r0E44p35?type=fotext&text="+encodeURI(teks)}
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -192,7 +160,7 @@ function imageFooter(){
                 sentBy: {
                     label: prof.displayName,
                     iconUrl: prof.pictureUrl,
-                    linkUrl: "line://app/1602687308-DgedGk9A?type=foimage&img="+getParameterByName('img')}
+                    linkUrl: "line://app/1603103514-r0E44p35?type=foimage&img="+getParameterByName('img')}
             }]).then(function () {
                 liff.closeWindow();
             });
@@ -225,7 +193,7 @@ function meProfile(){
                         {
                             type:"uri",
                             label:"Me",
-                            uri:"line://app/1602687308-DgedGk9A?type=profile"
+                            uri:"line://app/1603103514-r0E44p35?type=profile"
                         }
                     ]
                 }
@@ -255,7 +223,7 @@ function Profil_e(){
                         aspectMode: "cover",
                         action: {
                           type: "uri",
-                          uri: "line://app/1602687308-DgedGk9A?type=foimage&img="+pict
+                          uri: "line://app/1603103514-r0E44p35?type=foimage&img="+pict
                         }
                       },
                       body: {
@@ -311,7 +279,7 @@ function Profil_e(){
                             action: {
                               type: "uri",
                               label: "Me",
-                              uri: "line://app/1602687308-DgedGk9A?type=me"
+                              uri: "line://app/1603103514-r0E44p35?type=me"
                             },
                             flex: 2
                           },
@@ -364,7 +332,7 @@ function bigImage(){
     if (tipe === 'bimg') {
         liff.sendMessages([{
             type: "imagemap",
-            baseUrl: "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/21/2017/04/11020230/1040x1040-SONGKRAN-2017-NO-TEXT.jpg",
+            baseUrl: "https://geousa.herokuapp.com/",
             altText: "imagemap",
             baseSize: {
               height: 1040,
@@ -373,7 +341,7 @@ function bigImage(){
             actions: [
               {
                 type: "uri",
-                linkUri: "https://www.facebook.com",
+                linkUri: "https://www.google.com",
                 area: {
                   x: 0,
                   y: 0,

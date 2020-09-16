@@ -1,7 +1,6 @@
 html{
     font-size: 11px;
 }
-
 body {
   background: -webkit-linear-gradient(200deg, #00C4FF, #9D1BB2);
   background: linear-gradient(205deg, #00C4FF, #9D1BB2);
@@ -11,7 +10,7 @@ body {
 }
 
 .dark {
-  background: #24252A;
+  background: #24252Acc;
 }
 
 .flex {
@@ -27,7 +26,7 @@ body {
 }
 
 .button {
-    background-color: #bababa; /* Green */
+    background-color: #bababacc; /* Green */
     border: none;
     color: white;
     padding: 8px 42px;
